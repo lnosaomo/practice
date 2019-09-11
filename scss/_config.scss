@@ -4,9 +4,10 @@ $show-home-image:true;
 $overlay-color:white;
 $home-image:url(../img/background.jpg);
 $background-opacity:0.15;
+$overlay-show-color:#82a2ad;
 
 @mixin easeOut {
-    transition: alls 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin background {
