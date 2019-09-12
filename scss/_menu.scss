@@ -55,6 +55,7 @@
       justify-content: center;
       float: left;
       width: 50%;
+      
       height:100vh;
       overflow: hidden;
     }
@@ -98,6 +99,10 @@
          &.show {
              transform: translate3d(0,0,0);
          }
+
+         &.current>a {
+             color:$secondary-color;
+         }
      }
 
      .nav-link {
@@ -110,6 +115,10 @@
          color:white;
          text-decoration: none;
          @include easeOut;
+
+         &:hover{
+             color:$secondary-color;
+         }
      }
     }
 
