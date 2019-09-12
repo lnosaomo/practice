@@ -1,4 +1,4 @@
-$primary-color:#444;
+$primary-color:black;
 $secondary-color: #eece1a;
 $show-home-image:true;
 $overlay-color:white;
@@ -32,6 +32,18 @@ $overlay-show-color:#82a2ad;
 }
 }
 
+//set text color
+
+@function set-text-color($color){
+    @if (lightness($color)>40){
+        @return black;
+    }
+    @else {
+        @return white;
+
+    }
+}
+
 
 //media queries
 
@@ -42,7 +54,7 @@ $overlay-show-color:#82a2ad;
 }
 
 @mixin mediaMd {
-    @media screen and (max-width:768px){
+    @media screen and (max-width:760px){
         @content;
     }
 }
