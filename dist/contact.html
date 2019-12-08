@@ -1,116 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Connect</title>
+    <title>Contact Us</title>
     <script src="https://kit.fontawesome.com/e66789ab4e.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
-
 <body id="bg-img">
-
-    <header>
-
-
-        <nav id="mainnav" class="group">
-            <div id="menu">&#x2261; Menu</div>
-
-
-            <ul class="">
-
-                <li class="">
-                    <a href="index.html" class="">Home</a>
-                </li>
-                <li class="">
-                    <a href="about.html" class="">About Me</a>
-                </li>
-
-                <li class="">
-                    <a href="biography.html" class="">Biography</a>
-                </li>
-
-                <li class="">
-                    <a href="work.html" class="">Artwork Gallery</a>
-                </li>
-                <li class="">
-                    <a href="books.html" class="">Book Reccomendations</a>
-                </li>
-
-                <li class="">
-                    <a href="contact.html" class="">Connect</a>
-                </li>
-                <li class="">
-                    <a href="resume.html" class="">Resume</a>
-                </li>
-
-
-            </ul>
-        </nav>
-    </header>
-
-    <div class="contact-heading">
-        <h1 class="lg-heading">Connect with <span class="text-secondary">Me</span></h1>
-        <h2 class="sm-heading">Write your message and click submit to send your message:</h2>
-    </div>
-    <div class="main-contact">
-        <div id="form-container" class="form-container">
-            <form id="form">
-                <div class="row">
-                    <div class="col-25">
-                        <label id="firstname-label" for="fname">First Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input class="contact-input" type="text" id="fname" name="firstname"
-                            title="Must be more than 2 letters, no numbers or characters" pattern="[A-Za-z]{2,}"
-                            required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label id="lastname-label" for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input class="contact-input" type="text" id="lname" name="lastname"
-                            title="Must be more than 2 letters, no numbers or characters" pattern="[A-Za-z]{2,}"
-                            required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label id="email-label" for="email">Email</label>
-                    </div>
-                    <div class="col-75">
-                          <input class="contact-input" type="text"  id="email" name="email"  title="Must be valid email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}" required>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label id="message-label" for="message">Message</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="message" name="message" placeholder="Write your message" style="height:200px"
-                            required></textarea>
-                    </div>
-                </div>
-
-
-
-                <div class="row">
-                    <input class="contact-input" onclick="checkFormValuesType()" id="submit" type="submit"
-                        value="Submit">
-                </div>
-            </form>
-        </div>
-
+    
+<header>
+    <div class="menu-btn">
+<div class="btn-line"></div>
+<div class="btn-line"></div>
+<div class="btn-line"></div>
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/response.js"></script>
+<nav class="menu">
+    <div class="menu-branding">
+
+        <div class="potrait"></div>
+    </div>
+        <ul class="menu-nav">
+            <li class="nav-item ">
+                <a href="index.html" class="nav-link ">Home</a>
+            </li>
+            <li class="nav-item current">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                        <a href="work.html" class="nav-link">Published books</a>
+                    </li>
+                    <li class="nav-item current">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+        </ul>
+    
+</nav>    
+</header>
+<main id="contact">
+    <h1 class="lg-heading">Contact  <span class="text-secondary">Us</span></h1>
+    <h2 class="sm-heading">For inquiries contact us at:</h2>
+<div class="boxes">
+<div>
+    <span class="text-secondary">Email</span>
+    evangelbooks@gmail.com
+</div>
+<div>
+    <span class="text-secondary">Phone</span>
+    +234 708 568 1564
+</div> 
+
+<div>
+    <span class="text-secondary">Adress</span>
+   7, Eguadase Street, Benin City
+</div>
+</div>
+</main>
+<footer id="main-footer">Copyright &copy; 2018</footer>
+<script src="js/main.js"></script>
 </body>
-
 </html>
